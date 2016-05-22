@@ -30,10 +30,6 @@ module.exports = exports.default = function emailPropt({
   return new Promise((resolve, reject) => {
     const isRaw = process.stdin.isRaw;
     const isPaused = process.stdin.isPaused();
-    const restore = () => {
-      process.stdin.setRawMode(isRaw);
-      process.stdin.pause();
-    };
 
     process.stdin.write(start);
     process.stdin.setRawMode(true);
@@ -46,7 +42,7 @@ module.exports = exports.default = function emailPropt({
     // to make `for..of` work with buble
     const _domains = Array.from(domains);
 
-    process.stdin.on('data', (v) => {
+    const ondata = (v) => {
       const s = v.toString();
 
       // abort upon ctrl+C
@@ -123,6 +119,14 @@ module.exports = exports.default = function emailPropt({
       if (caretOffset) {
         process.stdout.write(ansi.cursorBackward(Math.abs(caretOffset)));
       }
-    });
+    };
+
+    const restore = () => {
+      process.stdin.setRawMode(isRaw);
+      process.stdin.pause();
+      process.stdin.removeListener('data', ondata);
+    };
+
+    process.stdin.on('data', ondata);
   });
 }
