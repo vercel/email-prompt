@@ -1,4 +1,9 @@
 
+0.1.3 / 2016-05-22
+==================
+
+  * clean up `data` listener upon promise settlement [@rauchg]
+
 0.1.2 / 2016-05-22
 ==================
 
