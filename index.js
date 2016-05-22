@@ -43,6 +43,9 @@ module.exports = exports.default = function emailPropt({
     let suggestion = '';
     let caretOffset = 0;
 
+    // to make `for..of` work with buble
+    const _domains = Array.from(domains);
+
     process.stdin.on('data', (v) => {
       const s = v.toString();
 
@@ -99,7 +102,7 @@ module.exports = exports.default = function emailPropt({
         if (2 === parts.length && parts[1].length) {
           const [, _host] = parts;
           const host = _host.toLowerCase();
-          for (const domain of domains) {
+          for (const domain of _domains) {
             if (host === domain) {
               break;
             }
