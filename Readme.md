@@ -41,7 +41,7 @@ $ node demo
   - `mail.com`
   - `gmx.com`
 - `forceLowerCase` (`Boolean`): converts all input to lowercase. Defaults to `true`.
-- `suggestionColor` (`String`): a [chalk](https://github.com/chalk/chalk) color. Defualts to `gray`
+- `suggestionColor` (`String`): a [chalk](https://github.com/chalk/chalk) color. Defaults to `gray`
 - `autocompleteChars` (`Set`): a set of chars that trigger autocompletion. Defaults to:
   - ↹ Tab
   - ↵ Return (enter)
