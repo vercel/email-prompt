@@ -1,4 +1,4 @@
-require('./')()
+require('./build')()
 .then((email) => {
   console.log('\n> Thanks ' + email);
 })
