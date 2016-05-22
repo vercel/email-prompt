@@ -1,6 +1,6 @@
 {
   "name": "email-prompt",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "files": ["index.js"],
   "main": "index.js",
   "description": "",
