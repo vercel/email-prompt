@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "buble -y dangerousForOf index.js > build.js",
-    "prepublish": "np run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "buble": "0.9.2"
