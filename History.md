@@ -1,4 +1,9 @@
 
+0.1.4 / 2016-05-23
+==================
+
+  * index: support both delete and backspace [@rauchg]
+
 0.1.3 / 2016-05-22
 ==================
 
