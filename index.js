@@ -68,7 +68,7 @@ module.exports = exports.default = function emailPropt({
           if (caretOffset < 0) {
             caretOffset++;
           }
-        } else if (127 === v[0]) {
+        } else if ('\x08' === s || '\x7f' === s) {
           // delete key needs splicing according to caret position
           val = val.substr(0, val.length + caretOffset - 1) +
             val.substr(val.length + caretOffset);
