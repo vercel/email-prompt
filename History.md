@@ -1,4 +1,9 @@
 
+0.1.5 / 2016-05-27
+==================
+
+  * add spacebar as autocomplete character [@rauchg]
+
 0.1.4 / 2016-05-23
 ==================
 
