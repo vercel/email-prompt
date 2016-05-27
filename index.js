@@ -21,7 +21,8 @@ module.exports = exports.default = function emailPropt({
   autoCompleteChars = new Set([
     '\t' /* tab */,
     '\r' /* return */,
-    '\u001b[C' /* right arrow */
+    '\u001b[C' /* right arrow */,
+    ' ' /* spacebar */
   ]),
   resolveChars = new Set(['\r']),
   abortChars = new Set(['\u0003']),
