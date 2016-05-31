@@ -85,7 +85,7 @@ module.exports = exports.default = function emailPropt({
               return;
             }
 
-            if (/^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]$/.test(s)) {
+            if (/^[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(s)) {
               return;
             }
           }
