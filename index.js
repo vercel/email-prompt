@@ -32,7 +32,7 @@ module.exports = exports.default = function emailPropt({
     const isRaw = process.stdin.isRaw;
     const isPaused = process.stdin.isPaused();
 
-    process.stdin.write(start);
+    process.stdout.write(start);
     process.stdin.setRawMode(true);
     process.stdin.resume();
 
