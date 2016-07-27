@@ -1,4 +1,4 @@
-# email-prompt
+# email-prompt [![Build Status](https://travis-ci.org/zeit/email-prompt.svg?branch=master)](https://travis-ci.org/zeit/email-prompt)
 
 CLI email prompt featuring autocompletion and validation.
 Powers [𝚫now](https://zeit.co/now) `--login`.
