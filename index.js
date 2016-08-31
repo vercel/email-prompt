@@ -14,7 +14,8 @@ module.exports = exports.default = function emailPropt({
     'outlook.com',
     'inbox.com',
     'mail.com',
-    'gmx.com'
+    'gmx.com',
+    'icloud.com'
   ]),
   forceLowerCase = true,
   suggestionColor = 'gray',
