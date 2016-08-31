@@ -40,6 +40,7 @@ $ node demo
   - `inbox.com`
   - `mail.com`
   - `gmx.com`
+  - `icloud.com`
 - `forceLowerCase` (`Boolean`): converts all input to lowercase. Defaults to `true`.
 - `suggestionColor` (`String`): a [chalk](https://github.com/chalk/chalk) color. Defaults to `gray`
 - `autocompleteChars` (`Set`): a set of chars that trigger autocompletion. Defaults to:
