@@ -11,8 +11,8 @@ Powers [𝚫now](https://zeit.co/now) `--login`.
 const prompt = require('email-prompt');
 prompt({ /* opts */ })
 .then((email) => {
-  console.log('\n> Hello ' + val);
-))
+  console.log('\n> Hello ' + email);
+})
 .catch(() => {
   console.log('\n> Aborted!');
 })
