@@ -22,11 +22,11 @@ module.exports = exports.default = function emailPropt({
   autoCompleteChars = new Set([
     '\t' /* tab */,
     '\r' /* return */,
-    '\u001b[C' /* right arrow */,
+    '\x1b[C' /* right arrow */,
     ' ' /* spacebar */
   ]),
   resolveChars = new Set(['\r']),
-  abortChars = new Set(['\u0003']),
+  abortChars = new Set(['\x03']),
   allowInvalidChars = false
 } = {}) {
   return new Promise((resolve, reject) => {
@@ -62,11 +62,11 @@ module.exports = exports.default = function emailPropt({
         val += suggestion;
         suggestion = '';
       } else {
-        if ('\u001b[D' === s) {
+        if ('\x1b[D' === s) {
           if (val.length > Math.abs(caretOffset)) {
             caretOffset--;
           }
-        } else if ('\u001b[C' === s) {
+        } else if ('\x1b[C' === s) {
           if (caretOffset < 0) {
             caretOffset++;
           }
