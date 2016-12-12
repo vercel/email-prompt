@@ -1,6 +1,7 @@
 {
   "name": "email-prompt",
   "version": "0.1.8",
+  "repository": "zeit/email-prompt",
   "files": [
     "build.js"
   ],
