@@ -11,14 +11,18 @@ Powers [𝚫now](https://zeit.co/now) `--login`.
 ## How to use
 
 ```js
-const prompt = require('email-prompt');
-prompt({ /* opts */ })
-.then((email) => {
-  console.log('\n> Hello ' + email);
-})
-.catch(() => {
-  console.log('\n> Aborted!');
-})
+import emailPrompt from 'email-prompt'
+
+let email
+
+try {
+  email = await emailPrompt({ /* options */ })
+} catch (err) {
+  console.log('\n> Aborted!')
+  return
+}
+
+console.log('\n> Hello ' + email)
 ```
 
 To run the demo, clone the project and run:
