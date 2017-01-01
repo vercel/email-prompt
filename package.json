@@ -20,6 +20,6 @@
     "emails": false
   },
   "devDependencies": {
-    "buble": "0.14.0"
+    "buble": "0.14.1"
   }
 }
