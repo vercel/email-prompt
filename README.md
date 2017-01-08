@@ -26,7 +26,7 @@ try {
 console.log('\n> Hello ' + email)
 ```
 
-To run the demo, clone the project and run:
+To run the demo, [clone](https://help.github.com/articles/cloning-a-repository/) the project and run:
 
 ```bash
 npm install
