@@ -14,12 +14,23 @@
   },
   "scripts": {
     "build": "buble -y dangerousForOf index.js > build.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "xo"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "rules": {
+      "no-use-before-define": 0,
+      "func-names": 0
+    }
   },
   "greenkeeper": {
     "emails": false
   },
   "devDependencies": {
-    "buble": "0.14.0"
+    "buble": "0.14.0",
+    "xo": "^0.17.1"
   }
 }
