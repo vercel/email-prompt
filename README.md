@@ -9,7 +9,7 @@ Powers [𝚫now](https://zeit.co/now) `--login`.
 
 ![prompt](https://cloud.githubusercontent.com/assets/13041/15456597/36b76246-202a-11e6-99e8-3839514bed57.gif)
 
-## How to use
+## Usage
 
 ```js
 import emailPrompt from 'email-prompt'
