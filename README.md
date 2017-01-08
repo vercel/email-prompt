@@ -69,3 +69,8 @@ Some important implementation details:
   that you come to expect in a regular `stdin` prompt are simulated.
   This gives us fine-grained control over the output and powers the
   validation.
+
+## Authors
+
+Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [▲ZEIT](https://zeit.co)
+Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
