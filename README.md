@@ -29,8 +29,8 @@ console.log('\n> Hello ' + email)
 To run the demo, clone the project and run:
 
 ```bash
-$ npm install
-$ node demo
+npm install
+node demo
 ```
 
 ### Options
