@@ -30,6 +30,11 @@ module.exports = exports.default = function emailPropt({
   allowInvalidChars = false
 } = {}) {
   return new Promise((resolve, reject) => {
+    // some environments (e.g., cygwin) don't provide a tty
+    if (!process.stdin.setRawMode) {
+      return reject(new Error('stdin lacks setRawMode support'))
+    }
+
     const isRaw = process.stdin.isRaw
 
     process.stdout.write(start)
