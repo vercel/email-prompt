@@ -1,6 +1,6 @@
 {
   "name": "email-prompt",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "repository": "zeit/email-prompt",
   "license": "MIT",
   "files": [
