@@ -8,10 +8,6 @@
   ],
   "main": "build.js",
   "description": "CLI email prompt with autocompletion and built-in validation",
-  "dependencies": {
-    "ansi-escapes": "1.4.0",
-    "chalk": "1.1.3"
-  },
   "scripts": {
     "build": "buble -y dangerousForOf index.js > build.js",
     "prepublish": "npm run build",
@@ -26,11 +22,12 @@
       "func-names": 0
     }
   },
-  "greenkeeper": {
-    "emails": false
+  "dependencies": {
+    "ansi-escapes": "1.4.0",
+    "chalk": "1.1.3"
   },
   "devDependencies": {
     "buble": "0.14.0",
-    "xo": "^0.17.1"
+    "xo": "0.17.1"
   }
 }
