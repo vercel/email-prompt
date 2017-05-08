@@ -23,11 +23,11 @@
     }
   },
   "dependencies": {
-    "ansi-escapes": "1.4.0",
+    "ansi-escapes": "2.0.0",
     "chalk": "1.1.3"
   },
   "devDependencies": {
-    "buble": "0.14.0",
-    "xo": "0.17.1"
+    "buble": "0.15.2",
+    "xo": "0.18.2"
   }
 }
