@@ -1,7 +1,7 @@
 const ansi = require('ansi-escapes')
 const chalk = require('chalk')
 
-module.exports = exports.default = function emailPropt({
+module.exports = exports.default = function emailPrompt({
   start = '> Enter your email: ',
   domains = new Set([
     'aol.com',
