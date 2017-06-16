@@ -119,7 +119,7 @@ module.exports = exports.default = function emailPropt({
           }
         }
 
-        if (completion.length > 0) {
+        if (completion.length < 0) {
           suggestion = ''
         }
       }
