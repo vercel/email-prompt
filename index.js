@@ -1,6 +1,7 @@
 const ansi = require('ansi-escapes')
 const chalk = require('chalk')
 
+// eslint-disable-next-line no-multi-assign
 module.exports = exports.default = function emailPropt({
   start = '> Enter your email: ',
   domains = new Set([
