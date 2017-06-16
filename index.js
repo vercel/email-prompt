@@ -1,6 +1,7 @@
 const ansi = require('ansi-escapes')
 const chalk = require('chalk')
 
+// eslint-disable-next-line no-multi-assign
 module.exports = exports.default = function emailPrompt({
   start = '> Enter your email: ',
   domains = new Set([
@@ -24,14 +25,14 @@ module.exports = exports.default = function emailPrompt({
     '\t' /* tab */,
     '\r' /* return */,
     '\x1b[C' /* right arrow */,
-    ' ' /* spacebar */
+    ' ' /* Spacebar */
   ]),
   resolveChars = new Set(['\r']),
   abortChars = new Set(['\x03']),
   allowInvalidChars = false
 } = {}) {
   return new Promise((resolve, reject) => {
-    // some environments (e.g., cygwin) don't provide a tty
+    // Some environments (e.g., cygwin) don't provide a tty
     if (!process.stdin.setRawMode) {
       return reject(new Error('stdin lacks setRawMode support'))
     }
@@ -46,13 +47,13 @@ module.exports = exports.default = function emailPrompt({
     let suggestion = ''
     let caretOffset = 0
 
-    // to make `for..of` work with buble
+    // To make `for..of` work with buble
     const _domains = Array.from(domains)
 
     const ondata = v => {
       const s = v.toString()
 
-      // abort upon ctrl+C
+      // Abort upon ctrl+C
       if (abortChars.has(s)) {
         restore()
         return reject(new Error('User abort'))
@@ -60,7 +61,7 @@ module.exports = exports.default = function emailPrompt({
 
       let completion = ''
 
-      // if we have a suggestion *and*
+      // If we have a suggestion *and*
       // the user is at the end of the line *and*
       // the user pressed one of the keys to trigger completion
       if (suggestion !== '' && !caretOffset && autoCompleteChars.has(s)) {
@@ -76,7 +77,7 @@ module.exports = exports.default = function emailPrompt({
             caretOffset++
           }
         } else if (s === '\x08' || s === '\x7f') {
-          // delete key needs splicing according to caret position
+          // Delete key needs splicing according to caret position
           val = val.substr(0, val.length + caretOffset - 1) +
             val.substr(val.length + caretOffset)
         } else {
@@ -86,7 +87,7 @@ module.exports = exports.default = function emailPrompt({
           }
 
           if (!allowInvalidChars) {
-            // disallow more than one @
+            // Disallow more than one @
             if (/@/.test(val) && s === '@') {
               return
             }
