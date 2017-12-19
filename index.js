@@ -4,21 +4,7 @@ const chalk = require('chalk')
 // eslint-disable-next-line no-multi-assign
 module.exports = exports.default = function emailPrompt({
   start = '> Enter your email: ',
-  domains = new Set([
-    'aol.com',
-    'gmail.com',
-    'google.com',
-    'yahoo.com',
-    'ymail.com',
-    'hotmail.com',
-    'live.com',
-    'outlook.com',
-    'inbox.com',
-    'mail.com',
-    'gmx.com',
-    'icloud.com',
-    'zeit.co'
-  ]),
+  domains = new Set(require('free-email-domains')),
   forceLowerCase = true,
   suggestionColor = 'gray',
   autoCompleteChars = new Set([
