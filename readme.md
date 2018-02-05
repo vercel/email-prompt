@@ -7,7 +7,9 @@
 CLI email prompt featuring autocompletion and validation.
 Powers [𝚫now](https://zeit.co/now) `--login`.
 
-![prompt](https://cloud.githubusercontent.com/assets/13041/15456597/36b76246-202a-11e6-99e8-3839514bed57.gif)
+<p align="center">
+<img src="https://cdn.rawgit.com/marionebl/f3344967e506e7fda3cfa58b773fbb4f/raw/7bb69c4e5c693b06bd9cf818aace36b146e240ce/demo.svg" width="600">
+</p>
 
 ## Usage
 
