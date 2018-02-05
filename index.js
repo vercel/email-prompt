@@ -120,7 +120,7 @@ module.exports = exports.default = function emailPrompt({
           }
         }
 
-        if (completion.length < 0) {
+        if (completion.length === 0) {
           suggestion = ''
         }
       }
