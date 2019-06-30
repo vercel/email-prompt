@@ -4,9 +4,10 @@
   "repository": "zeit/email-prompt",
   "license": "MIT",
   "files": [
-    "build.js"
+    "index.js",
+    "index.d.ts"
   ],
-  "main": "build.js",
+  "main": "index.js",
   "description": "CLI email prompt with autocompletion and built-in validation",
   "scripts": {
     "build": "buble -y dangerousForOf index.js > build.js",
