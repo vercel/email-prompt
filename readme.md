@@ -49,6 +49,7 @@ node demo
   - `mail.com`
   - `gmx.com`
   - `icloud.com`
+  - `hey.com`
   - `zeit.co`
 - `forceLowerCase` (`Boolean`): converts all input to lowercase. Defaults to `true`.
 - `suggestionColor` (`String`): a [chalk](https://github.com/chalk/chalk) color. Defaults to `gray`

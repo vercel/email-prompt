@@ -17,6 +17,7 @@ module.exports = exports.default = function emailPrompt({
     'mail.com',
     'gmx.com',
     'icloud.com',
+    'hey.com',
     'zeit.co'
   ]),
   forceLowerCase = true,
