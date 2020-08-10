@@ -2,10 +2,9 @@
 
 [![Build Status](https://travis-ci.org/zeit/email-prompt.svg?branch=master)](https://travis-ci.org/zeit/email-prompt)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Slack Channel](http://zeit-slackin.now.sh/badge.svg)](https://zeit.chat)
 
 CLI email prompt featuring autocompletion and validation.
-Powers [𝚫now](https://zeit.co/now) `--login`.
+Powers [Vercel](https://vercel.com) CLI’s `vercel login`.
 
 ![prompt](https://cloud.githubusercontent.com/assets/13041/15456597/36b76246-202a-11e6-99e8-3839514bed57.gif)
 
@@ -74,5 +73,5 @@ Some important implementation details:
 
 ## Authors
 
-- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [▲ZEIT](https://zeit.co)
-- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)
+- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [Vercel](https://vercel.com)
+- Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [Vercel](https://vercel.com)
