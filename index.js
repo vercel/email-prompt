@@ -11,6 +11,7 @@ module.exports = exports.default = function emailPrompt({
     'yahoo.com',
     'ymail.com',
     'hotmail.com',
+    'hey.com',
     'live.com',
     'outlook.com',
     'inbox.com',
