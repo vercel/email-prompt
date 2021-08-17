@@ -47,6 +47,7 @@ node demo
   - `mail.com`
   - `gmx.com`
   - `icloud.com`
+  - `hey.com`
   - `zeit.co`
   - `vercel.com`
 - `forceLowerCase` (`Boolean`): converts all input to lowercase. Defaults to `true`.
