@@ -1,6 +1,7 @@
 # email-prompt
 
 CLI email prompt featuring autocompletion and validation.
+Powers [vercel](https://vercel.com/) `--login`.
 
 ![prompt](https://cloud.githubusercontent.com/assets/13041/15456597/36b76246-202a-11e6-99e8-3839514bed57.gif)
 
@@ -46,7 +47,9 @@ node demo
   - `mail.com`
   - `gmx.com`
   - `icloud.com`
+  - `hey.com`
   - `zeit.co`
+  - `vercel.com`
 - `forceLowerCase` (`Boolean`): converts all input to lowercase. Defaults to `true`.
 - `suggestionColor` (`String`): a [chalk](https://github.com/chalk/chalk) color. Defaults to `gray`
 - `autocompleteChars` (`Set`): a set of chars that trigger autocompletion. Defaults to:

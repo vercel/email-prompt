@@ -17,7 +17,9 @@ module.exports = exports.default = function emailPrompt({
     'mail.com',
     'gmx.com',
     'icloud.com',
-    'zeit.co'
+    'zeit.co',
+    'vercel.com',
+    'hey.com'
   ]),
   forceLowerCase = true,
   suggestionColor = 'gray',
