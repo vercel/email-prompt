@@ -1,8 +1,5 @@
 # email-prompt
 
-[![Build Status](https://travis-ci.org/zeit/email-prompt.svg?branch=master)](https://travis-ci.org/zeit/email-prompt)
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-
 CLI email prompt featuring autocompletion and validation.
 Powers [vercel](https://vercel.com/) `--login`.
 
@@ -11,18 +8,20 @@ Powers [vercel](https://vercel.com/) `--login`.
 ## Usage
 
 ```js
-import emailPrompt from 'email-prompt'
+import emailPrompt from 'email-prompt';
 
-let email
+let email;
 
 try {
-  email = await emailPrompt({ /* options */ })
+  email = await emailPrompt({
+    /* options */
+  });
 } catch (err) {
-  console.log('\n> Aborted!')
-  return
+  console.log('\n> Aborted!');
+  return;
 }
 
-console.log('\n> Hello ' + email)
+console.log('\n> Hello ' + email);
 ```
 
 To run the demo, [clone](https://help.github.com/articles/cloning-a-repository/) the project and run:
@@ -63,6 +62,7 @@ node demo
 ### Notes
 
 Some important implementation details:
+
 - `email-prompt` automatically adapts the mode of `process.stdin` for you.
 - The `stdin` stream is `resume`d and `pause`d upon the promise being
   settled.
